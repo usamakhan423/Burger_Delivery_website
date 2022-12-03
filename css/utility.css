@@ -1,0 +1,42 @@
+.btn {
+  padding: 15px 20px;
+  background-color: #cb8e00;
+  color: #43200c;
+  font-size: 12px;
+  font-weight: 800;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+.section-heading {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Anton", sans-serif;
+  color: #43200c;
+}
+.btn-secondary {
+  background-color: #df1b1c;
+  padding: 15px 20px;
+  font-size: 12px;
+  color: #ffffff;
+  border: none;
+}
+.btn-light {
+  background-color: #df1b1c;
+  padding: 8px 16px;
+  font-size: 10px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.anchor {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.anchor:hover {
+  color: #43200c;
+  text-decoration: underline;
+}

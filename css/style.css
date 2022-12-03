@@ -1,0 +1,446 @@
+@import "utility.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@400;600&display=swap");
+:root {
+  --yellow: #fec84d;
+  --brown: #43200c;
+  --pure: #ffffff;
+  --red: #df1b1c;
+  --dark-yellow: #da9800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: orange;
+}
+.header .container {
+  margin: 0px 80px;
+}
+.header .container .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0px;
+}
+.header .container .main .left .brand {
+  display: flex;
+}
+.header .container .main .left .brand img {
+  width: 60px;
+  height: 60px;
+}
+.header .container .main .left .brand h1 {
+  font-size: 30px;
+  margin: 10px 20px;
+  color: var(--brown);
+  letter-spacing: -1px;
+}
+.header .container .main .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header .container .main .right .header .container .main .right .delivery {
+  text-align: center;
+}
+.header .container .main .right .delivery img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.header .container .main .right .delivery .main-delivery {
+  display: flex;
+  flex-direction: row;
+}
+.header .container .main .right .delivery .main-delivery span {
+  margin-top: 10px;
+}
+.header .container .main .right .delivery span {
+  font-size: 17px;
+}
+.header .container .main .right .delivery .header-links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header .container .main .right .delivery .header-links a {
+  /* text-decoration: none;
+  color: var(--brown);
+  font-size: 17px;
+  font-weight: 600; */
+  margin-right: 30px;
+  text-decoration: none;
+}
+.header .container .main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.header .container .main-content .left {
+  color: var(--brown);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.header .container .main-content .left p {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 2px dashed rgb(57, 53, 53);
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  width: 300px;
+}
+.header .container .main-content .left h1 {
+  font-size: 120px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: -20px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 5px;
+  color: var(--pure);
+  text-shadow: 2px 2px 3px #000000;
+}
+.header .container .main-content .left span {
+  font-size: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: -50px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 20px;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+.header .container .main-content {
+  padding-bottom: 5rem;
+}
+.header .container .main-content .right {
+  margin-left: 50px;
+  margin-top: -80px;
+}
+
+.gallery .container .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-left: 50px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-left: 150px;
+}
+.gallery .container .card-wrapper .left .card {
+  position: relative;
+}
+.gallery .container .card-wrapper .left .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+  background-color: #000000;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.gallery .container .card-wrapper .left .card:hover .overlay {
+  opacity: 80%;
+}
+.gallery .container .card-wrapper .left .card .overlay span {
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--dark-yellow);
+  text-shadow: 2p;
+}
+.gallery .container .card-wrapper .left .card .overlay h1 {
+  color: var(--pure);
+  font-size: 40px;
+}
+
+.gallery .container .card-wrapper .left .card img {
+  width: 625px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.gallery .container .card-wrapper .right .card img {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.gallery .container .card-wrapper .right .card {
+  position: relative;
+}
+.gallery .container .card-wrapper .right .card:hover .overlay {
+  opacity: 80%;
+}
+.gallery .container .card-wrapper .right .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  background-color: #000000;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.gallery .container .card-wrapper .right .card .overlay span {
+  font-size: 15px;
+  font-weight: 100;
+  color: var(--dark-yellow);
+  text-shadow: 2p;
+}
+.gallery .container .card-wrapper .right .card .overlay h1 {
+  color: var(--pure);
+  font-size: 25px;
+}
+/* ------------------------------------------ */
+/* Product Section */
+
+section.product .container {
+  text-align: center;
+  padding: 0px 70px;
+}
+section.product .container h1 {
+  margin-top: 2rem;
+  letter-spacing: 3px;
+}
+section.product .container #special {
+  background-color: var(--red);
+  color: var(--pure);
+}
+section.product .container p {
+  margin: 0px 80px;
+  color: grey;
+  font-size: 15px;
+  margin-top: 2rem;
+}
+section.product .container .product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 5rem;
+}
+section.product .container .product-wrapper .card h2 {
+  color: var(--brown);
+}
+section.product .container .product-wrapper .card p {
+  font-size: 15px;
+}
+
+section.product .container .product-wrapper .card img {
+  width: 300px;
+  height: auto;
+}
+section.product .container .product-wrapper .second-card {
+  margin-top: -2rem;
+}
+section.product .container .product-wrapper .second-card .card-content h2 {
+  margin-top: -10px;
+}
+section.product .container .product-wrapper .third-card {
+  margin-top: 1rem;
+}
+section.product .container .product-wrapper .third-card .card-content h2 {
+  margin-top: 20px;
+  color: var(--brown);
+}
+section.product .container .product-wrapper .card .card-content {
+  margin-top: 2rem;
+}
+section.product .container .product-wrapper .card .card-content p {
+  margin-top: 1rem;
+}
+section.product .container .product-wrapper .card .btn-secondary {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section.product .container .product-wrapper .third-card .card-content {
+  margin-top: 3rem;
+}
+/* -------------------------- */
+
+/* Event Section */
+.events .container {
+  background-color: var(--pure);
+  box-shadow: 0px 10px 25px #9b9898;
+  width: 80%;
+  margin: 0px 120px;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+.events .container .main-event {
+  display: flex;
+  margin: 20px 50px;
+}
+.events .container .main-event .right img {
+  width: 400px;
+  height: auto;
+  margin-left: 100px;
+}
+.events .container .main-event .left span {
+  color: var(--brown);
+  font-size: 18px;
+  font-weight: 500;
+}
+.events .container .main-event .left h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--brown);
+}
+.events .container .main-event .left p {
+  margin-top: 1rem;
+  width: 400px;
+  color: grey;
+}
+.events .container .main-event .left button {
+  align-items: center;
+  margin-left: 0px;
+  margin-top: 1rem;
+}
+/* -------------------------- */
+
+/* Booking */
+.booking .container {
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(188, 188, 188);
+  width: 1000px;
+  padding: 50px 100px;
+  margin-bottom: 5rem;
+  margin-left: 10rem;
+}
+.booking .container span {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--brown);
+}
+.booking .container h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--brown);
+  text-shadow: 1px 1px 2px #3a3838;
+  margin-top: 0.5rem;
+  word-spacing: 5px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3rem;
+}
+.booking .container .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 500px;
+  margin-left: 150px;
+  margin-bottom: 5rem;
+}
+.booking .container .form input {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(179, 179, 179);
+}
+.booking .container .form button {
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* -------------------- */
+
+/* Burger House */
+section.footer {
+  margin-top: 100px;
+  padding: 100px 15%;
+  background-color: #3a3838;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+section.footer div h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--pure);
+  margin-bottom: 2rem;
+}
+section.footer .left {
+  display: flex;
+  flex-direction: column;
+}
+section.footer .left a {
+  text-decoration: none;
+  color: #c3c3c3;
+  padding: 5px 0px;
+}
+section.footer .medium {
+  display: flex;
+  flex-direction: column;
+}
+section.footer .medium .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+section.footer .medium input {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  color: #3a3838;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+section.footer .medium button {
+  width: 150px;
+  padding: 8px 10px;
+  border: none;
+  color: var(--pure);
+  border-radius: 20px;
+  background-color: #da9800;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+section.footer .medium button:hover {
+  background-color: #000000;
+  color: var(--pure);
+}
+
+section.footer .medium .logo h3 {
+  margin-top: 30px;
+}
+section.footer .right p {
+  color: #d4d4d4;
+  margin-bottom: 2rem;
+}
+
+section.footer .right .social-links img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
